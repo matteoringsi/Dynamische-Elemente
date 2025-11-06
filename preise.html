@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dynamische Elemente - Preise</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Container für eingebettetes Google Doc */
+			.embed-container {
+				position: relative;
+				width: 100%;
+				max-width: 900px;
+				margin: 20px auto;
+				height: 80vh;
+				overflow: hidden;
+				border-radius: 12px;
+				box-shadow: 0 0 20px rgba(0,0,0,0.3);
+			}
+			.embed-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
+
+			.doc-explanation {
+				max-width: 900px;
+				margin: 20px auto;
+				padding: 10px;
+				background: #f9f9f9;
+				border: 1px solid #ccc;
+				border-radius: 6px;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="container">
+					<header id="header">
+						<div class="inner">
+							<h1><a href="index.html" id="logo">Matteo Ringsmuth</a></h1>
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li class="current_page_item"><a href="preise.html">Preise</a></li>
+									<li><a href="produkte.html">Produkte</a></li>
+									<li><a href="kontakt.html">Kontakt</a></li>
+									<li><a href="termine.html">Termine</a></li>
+								</ul>
+							</nav>
+						</div>
+					</header>
+				</div>
+			</div>
+
+			<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="wrapper style2">
+					<div class="inner">
+						<div class="container" id="content">
+
+							<article>
+								<header class="major">
+									<h2>Unsere aktuellen Preise</h2>
+									<p>Die aktuellen Preise finden Sie hier!</p>
+								</header>
+
+								<!-- Eingebettetes Google Doc -->
+								<div class="embed-container">
+									<iframe 
+										src="https://docs.google.com/document/d/e/2PACX-1vQa-IW0XknH5FCjXJ3AhHR2QOlbekwN79oNzDzAVxx9FE4tv0AFEcaHUddqLtd02W53oMenQJLVJXBF/pub?embedded=true"
+										scrolling="yes"
+										allowtransparency="true"
+										allowfullscreen="true">
+									</iframe>
+								</div>
+
+								<!-- Erklärung -->
+								<div class="doc-explanation">
+									<h3>Hinweis zum Einbinden von Google Docs</h3>
+									<p>So können Sie ein Google Doc direkt auf Ihrer Webseite einbetten:</p>
+									<ol>
+										<li>Öffnen Sie das Dokument in Google Docs.</li>
+										<li>Klicken Sie auf <strong>Datei → Im Web veröffentlichen</strong>.</li>
+										<li>Kopieren Sie den bereitgestellten Iframe-Code.</li>
+										<li>Fügen Sie den Code an der gewünschten Stelle im HTML Ihrer Webseite ein.</li>
+									</ol>
+								</div>
+
+							</article>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Matteo Ringsmuth. Alle Rechte vorbehalten.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

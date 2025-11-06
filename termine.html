@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dynamische Elemente - Termine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Einfache zentrierte Box für eingebetteten Google Calendar */
+			.embed-calendar-container {
+				width: 100%;
+				max-width: 800px;
+				margin: 20px auto;
+				padding: 10px;
+				text-align: center;
+				background: #f0f0f0;
+				border: 1px solid #ccc;
+			}
+
+			.embed-calendar-container iframe {
+				width: 100%;
+				height: 500px;
+				border: 0;
+			}
+
+			.calendar-explanation {
+				max-width: 800px;
+				margin: 20px auto;
+				padding: 10px;
+				background: #f9f9f9;
+				border: 1px solid #ccc;
+				text-align: left;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="container">
+					<header id="header">
+						<div class="inner">
+							<h1><a href="index.html" id="logo">Matteo Ringsmuth</a></h1>
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="preise.html">Preise</a></li>
+									<li><a href="produkte.html">Produkte</a></li>
+									<li><a href="kontakt.html">Kontakt</a></li>
+									<li class="current_page_item"><a href="termine.html">Termine</a></li>
+								</ul>
+							</nav>
+						</div>
+					</header>
+				</div>
+			</div>
+
+			<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="wrapper style2">
+					<div class="inner">
+						<div class="container" id="content">
+
+							<article>
+								<header class="major">
+									<h2>Unsere aktuellen Termine</h2>
+									<p>Die aktuellen Termine finden Sie hier!</p>
+								</header>
+
+								<!-- Eingebetteter Google Calendar -->
+								<div class="embed-calendar-container">
+									<iframe 
+										src="https://calendar.google.com/calendar/embed?src=de.austrian%23holiday%40group.v.calendar.google.com&ctz=Europe%2FVienna" 
+										style="border:0" 
+										frameborder="0" 
+										scrolling="no">
+									</iframe>
+								</div>
+
+								<!-- Erklärung -->
+								<div class="calendar-explanation">
+									<h3>Hinweis zum Einbetten von Google Calendar</h3>
+									
+									<ol>
+										<li>Öffnen Sie <a href="https://calendar.google.com" target="_blank">Google Calendar</a> und wählen Sie den gewünschten Kalender aus.</li>
+										<li>Klicken Sie auf die drei Punkte neben dem Kalender → <strong>Einstellungen und Freigabe</strong>.</li>
+										<li>Scrollen Sie nach unten zu <strong>Integrieren</strong> → <strong>Iframe-Code</strong> kopieren.</li>
+										<li>Fügen Sie den Code an der gewünschten Stelle in Ihre HTML-Seite ein.</li>
+										<li>Optional: Passen Sie Breite und Höhe im <code>&lt;iframe&gt;</code> an, damit der Kalender optimal angezeigt wird.</li>
+									</ol>
+								</div>
+
+							</article>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Matteo Ringsmuth. Alle Rechte vorbehalten.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
